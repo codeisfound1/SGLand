@@ -3,33 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saigon Land - Căn hộ cao cấp Thủ Thiêm, chọn sống tinh tế</title>
+    <title>SGLand - Bất động sản cao cấp</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(to bottom, #0a1f4b, #1a2b4d);
         }
         header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
+            position: fixed;
+            width: 100%;
+            background: rgba(10, 31, 75, 0.8);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
         }
-        nav {
-            margin: 10px 0;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #FFD700; /* Gold */
         }
         nav a {
             margin: 0 15px;
-            color: white;
+            color: #fff;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            border: none;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 31, 75, 0.7);
+            z-index: 2;
         }
         .content {
-            padding: 20px;
-        }
-        .video-container {
-            margin-top: 20px;
+            padding: 100px 20px;
             text-align: center;
+        }
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .video-gallery iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(10, 31, 75, 0.9);
         }
         @media (max-width: 600px) {
             nav a {
@@ -42,36 +90,34 @@
 <body>
 
 <header>
-    <h1>Saigon Land</h1>
+    <h1>SGLand</h1>
     <nav>
         <a href="#">Giới thiệu</a>
         <a href="#">Dự án</a>
         <a href="#">Chuyển nhượng</a>
         <a href="#">Cho thuê</a>
-        <a href="#">Tin tức – BĐS</a>
+        <a href="#">Tin tức</a>
         <a href="#">Liên hệ</a>
     </nav>
 </header>
 
-<div class="content">
-    <h2>Dự án nổi bật</h2>
-    <ul>
-        <li>The Galleria Residence</li>
-        <li>The Crest Residence</li>
-        <li>The Opera Residence</li>
-        <li>Grand Marina Saigon</li>
-        <li>Empire City</li>
-        <li>Lotte Eco Smart City</li>
-    </ul>
+<section class="hero">
+    <div class="overlay"></div>
+    <iframe src="https://www.youtube.com/embed/your_video_id" allowfullscreen></iframe>
+</section>
 
-    <div class="video-container">
-        <h2>Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+<div class="content">
+    <h2>Video Gallery</h2>
+    <div class="video-gallery">
+        <iframe src="https://www.youtube.com/embed/video_id1"></iframe>
+        <iframe src="https://www.youtube.com/embed/video_id2"></iframe>
+        <iframe src="https://www.youtube.com/embed/video_id3"></iframe>
+        <iframe src="https://www.youtube.com/embed/video_id4"></iframe>
     </div>
 </div>
 
 <footer>
-    <p>© 2025 Saigon Land. Tất cả quyền được bảo lưu.</p>
+    <p>© 2025 SGLand. Tất cả quyền được bảo lưu.</p>
 </footer>
 
 </body>
