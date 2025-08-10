@@ -21,6 +21,18 @@
         h1 {
             margin: 0;
         }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .content {
             margin-top: 20px;
         }
@@ -36,18 +48,44 @@
             background-color: #333;
             color: white;
         }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>SGland - Đại lý bất động sản</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
     </header>
     <div class="content">
-        <h2>Chào mừng đến với SGland</h2>
-        <p>SGland là đại lý bất động sản hàng đầu, cung cấp dịch vụ chất lượng cao và đa dạng về bất động sản. Chúng tôi cam kết mang đến cho bạn những lựa chọn tốt nhất.</p>
-        
-        <h2>Video YouTube của chúng tôi</h2>
-        <iframe src="https://www.youtube.com/embed/2X0jmGoll6o?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section id="home">
+            <h2>Video YouTube của chúng tôi</h2>
+            <iframe src="https://www.youtube.com/embed/2X0jmGoll6o?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h2>Chào mừng đến với SGland</h2>
+            <p>SGland là đại lý bất động sản hàng đầu, cung cấp dịch vụ chất lượng cao và đa dạng về bất động sản. Chúng tôi cam kết mang đến cho bạn những lựa chọn tốt nhất.</p>
+        </section>
+        <section id="about">
+            <h2>Giới thiệu</h2>
+            <p>Chúng tôi cung cấp các dịch vụ tư vấn bất động sản chuyên nghiệp và tận tâm.</p>
+        </section>
+        <section id="services">
+            <h2>Dịch vụ</h2>
+            <p>Chúng tôi cung cấp các dịch vụ mua bán, cho thuê và quản lý bất động sản.</p>
+        </section>
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <p>Để biết thêm thông tin, vui lòng liên hệ qua email: info@sgland.vn.</p>
+        </section>
     </div>
     <footer>
         <p>© 2025 SGland. Tất cả quyền được bảo lưu.</p>
